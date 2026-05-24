@@ -116,7 +116,7 @@ export default function Home() {
         <div className="section-container" style={{ position: "relative", zIndex: 1, width: "100%" }}>
           <div className="scroll-fade visible" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
             <div style={{ maxWidth: "54rem", padding: "0 1rem" }}>
-              <h1 style={{ fontSize: "clamp(2.5rem, 5vw + 1rem, 60px)", fontWeight: 500, letterSpacing: "-0.03em", lineHeight: 1.08, marginBottom: "1.5rem", color: "#ffffff", fontFamily: "var(--font-body)", textShadow: "0 2px 10px rgba(0,0,0,0.2)" }}>
+              <h1 style={{ fontSize: "clamp(2.5rem, 5vw + 1rem, 60px)", fontWeight: 500, letterSpacing: "-0.03em", lineHeight: 1.08, marginBottom: "1.5rem", color: "#ffffff", fontFamily: "var(--font-body)", textShadow: "0 2px 10px rgba(0, 0, 0, 0.2)" }}>
                 The Intelligence Layer for <br/><span className="serif-italic" style={{ fontWeight: 400, letterSpacing: "-0.02em", color: "rgba(255, 255, 255, 0.9)" }}>Unstructured Data.</span>
               </h1>
               <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "clamp(0.75rem, 2.2vw, 1.05rem)", fontWeight: 400, lineHeight: 1.6, maxWidth: "42rem", margin: "0 auto 2.5rem auto", fontFamily: "var(--font-body)", textShadow: "0 2px 8px rgba(0,0,0,0.15)" }}>
@@ -187,8 +187,9 @@ export default function Home() {
       </section>
 
       {/* STATS */}
-      <section style={{ padding: "clamp(2rem, 5vw, 3rem) 0", borderBottom: "1px solid var(--border)", transition: "borderColor 0.35s ease" }}>
-        <div className="section-container">
+      <section style={{ padding: "clamp(2rem, 5vw, 3rem) 0", borderBottom: "1px solid var(--border)", transition: "borderColor 0.35s ease", position: "relative" }}>
+        <div className="grid-overlay"></div>
+        <div className="section-container" style={{ position: "relative", zIndex: 1 }}>
           <div className="stats-grid" style={{ display: "grid", gap: "1px", background: "var(--border)" }}>
             <div style={{ background: "var(--bg)", padding: "2rem", textAlign: "center", transition: "background 0.35s ease" }}>
               <p style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 500, letterSpacing: "-0.03em", color: "var(--black)" }}>&lt; 3s</p>
