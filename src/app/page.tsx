@@ -70,18 +70,18 @@ export default function Home() {
                 <a href="#formats">Formats</a>
                 <a href="#intelligence">Intelligence</a>
                 <a href="#security">Security</a>
-                <a href="#pricing">Pricing</a>
               </div>
               <div className="nav-right">
-                <a href="mailto:contact@lmlens.com" className="nav-cta">
-                  Get API Acces
+                <a href="https://api.navchetna.tech/v1/estimate" className="nav-cta" target="_blank" rel="noopener noreferrer">
+                  Get API Access
                 </a>
               </div>
             </nav>
             <div className="nav-mobile">
               <div className="nav-mobile-top">
                 <a href="#" className="nav-mobile-logo">
-                  LM LENS
+                  <img src="/lm-lens 1.png" alt="LM Lens" className="nav-logo-img" />
+                  LM <span>LENS</span>
                 </a>
                 <button
                   className={`nav-mobile-toggle ${mobileMenuOpen ? "open" : ""}`}
@@ -100,9 +100,8 @@ export default function Home() {
                     <a href="#formats" onClick={() => setMobileMenuOpen(false)}>Formats</a>
                     <a href="#intelligence" onClick={() => setMobileMenuOpen(false)}>Intelligence</a>
                     <a href="#security" onClick={() => setMobileMenuOpen(false)}>Security</a>
-                    <a href="#pricing" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
-                    <a href="mailto:contact@lmlens.com" className="mobile-cta">
-                      Get API Acces
+                    <a href="https://api.navchetna.tech/v1/estimate" className="mobile-cta" target="_blank" rel="noopener noreferrer">
+                      Get API Access
                     </a>
                   </div>
                 </div>
@@ -125,7 +124,7 @@ export default function Home() {
               </p>
               <div className="hero-btns" style={{ display: "flex", flexWrap: "nowrap", justifyContent: "center", gap: "clamp(0.5rem, 2vw, 1rem)" }}>
                 <a
-                  href="#"
+                  href="https://api.navchetna.tech/v1/estimate" target="_blank" rel="noopener noreferrer"
                   style={{ display: "inline-flex", height: "48px", alignItems: "center", gap: "8px", background: "#ffffff", color: "#000000", padding: "0 clamp(16px, 3vw, 24px)", borderRadius: "999px", fontSize: "clamp(12px, 2.5vw, 13.5px)", fontWeight: 600, textDecoration: "none", transition: "opacity 0.2s", fontFamily: "var(--font-body)", whiteSpace: "nowrap" }}
                 >
                   Get API Access <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
@@ -226,38 +225,22 @@ export default function Home() {
               {
                 title: "Any File Format",
                 text: "Send scanned PDFs, Hindi audio recordings, video lectures, handwritten notes, or Excel reports — one unified API handles all of it.",
-                icon: (
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor">
-                    <path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"/>
-                  </svg>
-                )
+                icon: <i className="ph ph-files" style={{ fontSize: "22px" }}></i>
               },
               {
                 title: "Structured Data Out",
                 text: "Define your schema once. LMLens returns clean, structured JSON — ready to be inserted into your database or consumed by your API.",
-                icon: (
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor">
-                    <path d="M168,152a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,152Zm-8-40H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm56-64V216a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V48A16,16,0,0,1,56,32H160a8,8,0,0,1,5.66,2.34l40,40A8,8,0,0,1,216,80ZM160,51.31V80h28.69ZM200,216V96H152a8,8,0,0,1-8-8V40H56V216Z"/>
-                  </svg>
-                )
+                icon: <i className="ph ph-brackets-curly" style={{ fontSize: "22px" }}></i>
               },
               {
                 title: "Zero Infrastructure",
                 text: "No ML models to train, no GPU clusters to manage, no scaling worries. One API call replaces an entire extraction stack.",
-                icon: (
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor">
-                    <path d="M230.14,70.54,185.46,25.86a20,20,0,0,0-28.29,0L33.86,149.17a20,20,0,0,0,0,28.29l44.68,44.68A20,20,0,0,0,92.69,228H216a12,12,0,0,0,0-24H160l70.13-70.13a20,20,0,0,0,0-28.29ZM84,204.69,39.31,160,76,123.31l44.69,44.69Zm96-96-28.69,28.69L106.62,92.69,135.31,64ZM213.31,155.69,187.54,181.46l-44.68-44.69,25.77-25.77Z"/>
-                  </svg>
-                )
+                icon: <i className="ph ph-magic-wand" style={{ fontSize: "22px" }}></i>
               },
               {
                 title: "Single API, Every Stack",
                 text: "REST API with SDKs for JavaScript, Python, and more. Drop-in integration in under an hour, no new infrastructure required.",
-                icon: (
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor">
-                    <path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.71-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.28ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"/>
-                  </svg>
-                )
+                icon: <i className="ph ph-code" style={{ fontSize: "22px" }}></i>
               },
             ].map((feature, i) => (
               <div key={i} className="scroll-fade feature-card visible" style={{ background: "var(--gray-100)", borderRadius: "16px", padding: "2rem", transition: "background 0.35s ease" }}>
@@ -541,8 +524,8 @@ export default function Home() {
       <section id="intelligence" style={{ position: "relative", padding: "clamp(4rem, 10vw, 8rem) 0", borderTop: "1px solid var(--border)" }}>
         <div className="section-container">
           
-          <div className="api-section-header scroll-fade visible" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "flex-end", gap: "1.5rem", paddingBottom: "2rem" }}>
-            <div style={{ flex: "1 1 500px" }}>
+          <div className="api-section-header scroll-fade visible" style={{ paddingBottom: "1.5rem", position: "relative" }}>
+            <div style={{ maxWidth: "500px" }}>
               <p className="section-eyebrow" style={{ marginBottom: "1rem" }}>OsmiumAPI</p>
               <h2 className="section-heading" style={{ maxWidth: "36rem", marginBottom: "1rem" }}>
                 Build anything with a <span className="serif-gradient">powerful host of APIs.</span>
@@ -552,11 +535,6 @@ export default function Home() {
                 Tap into the same multimodal foundation models that power LMLens. Highly optimized for scale, latency, and structural accuracy.
               </p>
             </div>
-            <a className="btn-secondary" href="#" style={{ marginBottom: "1.5rem" }}>
-              Explore docs
-            </a>
-            <div className="crosshair" style={{ left: 0, bottom: 0 }}></div>
-            <div className="crosshair" style={{ right: 0, bottom: 0 }}></div>
           </div>
 
           {/* Bento Grid for APIs */}
@@ -619,74 +597,6 @@ export default function Home() {
                   </pre>
                 </div>
               </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* PRICING */}
-      <section id="pricing" style={{ padding: "clamp(4rem, 10vw, 8rem) 0", borderTop: "1px solid var(--border)", background: "var(--bg)" }}>
-        <div className="section-container">
-          <div className="scroll-fade visible" style={{ textAlign: "center", marginBottom: "4rem", display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <p className="section-eyebrow" style={{ marginBottom: "1rem" }}>Pricing</p>
-            <h2 className="section-heading" style={{ maxWidth: "36rem", marginBottom: "1rem" }}>
-              Pay only for <span className="serif-gradient">what you extract.</span>
-            </h2>
-            <div className="section-divider" style={{ maxWidth: "12rem", margin: "1.5rem auto" }}></div>
-            <p className="section-body" style={{ maxWidth: "36rem", margin: "0 auto" }}>
-              Transparent pricing based on document complexity and volume. No hidden fees or seat licenses.
-            </p>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "1.5rem" }}>
-            
-            {/* Free */}
-            <div className="scroll-fade visible" style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "20px", padding: "2.5rem", display: "flex", flexDirection: "column" }}>
-              <h3 style={{ fontSize: "1.25rem", fontWeight: 600, color: "var(--black)", marginBottom: "0.5rem" }}>Developer</h3>
-              <p className="section-body" style={{ marginBottom: "1.5rem" }}>Perfect for testing and side projects.</p>
-              <div style={{ marginBottom: "2rem", display: "flex", alignItems: "baseline", gap: "4px" }}>
-                <span style={{ fontSize: "2.5rem", fontWeight: 500, color: "var(--black)", letterSpacing: "-0.04em" }}>$0</span>
-                <span style={{ color: "var(--text-faint)", fontSize: "0.9rem" }}>/month</span>
-              </div>
-              <ul style={{ listStyle: "none", padding: 0, margin: "0 0 2rem 0", display: "flex", flexDirection: "column", gap: "12px", flexGrow: 1 }}>
-                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> 1,000 pages per month</li>
-                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> Standard extraction models</li>
-                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> Community support</li>
-              </ul>
-              <a className="btn-secondary" style={{ width: "100%" }} href="#">Start for free</a>
-            </div>
-
-            {/* Pro */}
-            <div className="scroll-fade visible" style={{ background: "var(--black)", border: "1px solid var(--border-strong)", borderRadius: "20px", padding: "2.5rem", display: "flex", flexDirection: "column", position: "relative", overflow: "hidden" }}>
-              <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "4px", background: "linear-gradient(90deg, #10b981, #eab308)" }}></div>
-              <h3 style={{ fontSize: "1.25rem", fontWeight: 600, color: "var(--bg)", marginBottom: "0.5rem" }}>Production</h3>
-              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.88rem", lineHeight: 1.65, marginBottom: "1.5rem" }}>For teams building core workflows.</p>
-              <div style={{ marginBottom: "2rem", display: "flex", alignItems: "baseline", gap: "4px" }}>
-                <span style={{ fontSize: "2.5rem", fontWeight: 500, color: "var(--bg)", letterSpacing: "-0.04em" }}>$49</span>
-                <span style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.9rem" }}>/month</span>
-              </div>
-              <ul style={{ listStyle: "none", padding: 0, margin: "0 0 2rem 0", display: "flex", flexDirection: "column", gap: "12px", flexGrow: 1 }}>
-                <li style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.7)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--bg)" }}>✓</span> 25,000 pages per month</li>
-                <li style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.7)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--bg)" }}>✓</span> Advanced Osmium Flash & v3</li>
-                <li style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.7)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--bg)" }}>✓</span> Batch Processing API</li>
-              </ul>
-              <a href="#" style={{ background: "var(--bg)", color: "var(--black)", padding: "0 18px", height: "36px", borderRadius: "999px", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 500, fontSize: "13px", textDecoration: "none" }}>Upgrade to Pro</a>
-            </div>
-
-            {/* Enterprise */}
-            <div className="scroll-fade visible" style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "20px", padding: "2.5rem", display: "flex", flexDirection: "column" }}>
-              <h3 style={{ fontSize: "1.25rem", fontWeight: 600, color: "var(--black)", marginBottom: "0.5rem" }}>Enterprise</h3>
-              <p className="section-body" style={{ marginBottom: "1.5rem" }}>Custom limits and deployment.</p>
-              <div style={{ marginBottom: "2rem", display: "flex", alignItems: "baseline", gap: "4px" }}>
-                <span style={{ fontSize: "2.5rem", fontWeight: 500, color: "var(--black)", letterSpacing: "-0.04em" }}>Custom</span>
-              </div>
-              <ul style={{ listStyle: "none", padding: 0, margin: "0 0 2rem 0", display: "flex", flexDirection: "column", gap: "12px", flexGrow: 1 }}>
-                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> Unlimited volume pricing</li>
-                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> Dedicated VPC / On-premise</li>
-                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> SLA & 24/7 Support</li>
-              </ul>
-              <a className="btn-secondary" style={{ width: "100%" }} href="mailto:contact@lmlens.com">Contact Sales</a>
             </div>
 
           </div>
@@ -790,24 +700,23 @@ export default function Home() {
                 <a href="#formats" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Formats</a>
                 <a href="#intelligence" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Intelligence</a>
                 <a href="#security" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Security</a>
-                <a href="#pricing" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Pricing</a>
               </div>
             </div>
 
             <div>
               <h4 style={{ fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--footer-eyebrow)", marginBottom: "1.5rem" }}>Our Products</h4>
               <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-                <a href="https://navchetna.tech" target="_blank" rel="noopener noreferrer" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Navchetna Tech</a>
                 <a href="https://osmium.co.in" target="_blank" rel="noopener noreferrer" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Osmium LLM</a>
+                <a href="https://natraj.navchetna.tech" target="_blank" rel="noopener noreferrer" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Natraj</a>
+                <a href="https://aegis.navchetna.tech" target="_blank" rel="noopener noreferrer" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Aegis Auth</a>
               </div>
             </div>
 
             <div>
               <h4 style={{ fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--footer-eyebrow)", marginBottom: "1.5rem" }}>Company</h4>
               <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-                <span style={{ color: "var(--footer-link)", fontSize: "14px" }}>Navchetna Technologies</span>
-                <a href="mailto:contact@lmlens.com" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">contact@lmlens.com</a>
-                <a href="mailto:contact@navchetna.tech" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">contact@navchetna.tech</a>
+                <a href="https://navchetna.tech" target="_blank" rel="noopener noreferrer" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Navchetna Technologies</a>
+                <a href="mailto:hello@navchetna.tech" style={{ color: "var(--footer-link)", fontSize: "14px", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">hello@navchetna.tech</a>
               </div>
             </div>
           </div>

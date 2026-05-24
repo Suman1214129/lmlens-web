@@ -66,7 +66,7 @@
     --code-string: #032f62;
     --code-func: #6f42c1;
     --code-comment: #6a737d;
-    --logo-filter: none;
+    --logo-filter: invert(1);
 }
 
 /* ── DARK THEME ── */
@@ -126,7 +126,7 @@
     --code-string: #a5d6ff;
     --code-func: #d2a8ff;
     --code-comment: #8b949e;
-    --logo-filter: invert(1) brightness(2);
+    --logo-filter: none;
 }
 
 html { scroll-behavior: smooth; }
@@ -225,7 +225,7 @@ header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; }
 }
 .nav-wrapper:not(.scrolled) .nav-logo { color: #ffffff; }
 .nav-logo-img { filter: var(--logo-filter); transition: filter 0.3s ease; }
-.nav-wrapper:not(.scrolled) .nav-logo-img { filter: invert(1) brightness(2) !important; }
+.nav-wrapper:not(.scrolled) .nav-logo-img { filter: none !important; }
 .nav-wrapper:not(.scrolled) .nav-logo span { color: rgba(255, 255, 255, 0.7); }
 .nav-wrapper:not(.scrolled) .nav-center a { color: rgba(255, 255, 255, 0.8); }
 .nav-wrapper:not(.scrolled) .nav-center a:hover { background: rgba(255, 255, 255, 0.1); color: #ffffff; }
@@ -283,7 +283,8 @@ header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; }
 .nav-mobile { display: block; }
 @media (min-width: 1024px) { .nav-mobile { display: none; } }
 .nav-mobile-top { display: flex; height: 58px; align-items: center; justify-content: space-between; padding: 0 20px; }
-.nav-mobile-logo { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--black); text-decoration: none; }
+.nav-mobile-logo { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--black); text-decoration: none; }
+.nav-mobile-logo img { width: 18px; height: 18px; opacity: 0.9; }
 .nav-mobile-toggle { display: flex; width: 32px; height: 32px; border-radius: 999px; background: var(--nav-link-hover-bg); border: none; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 5px; }
 .nav-mobile-toggle span { display: block; width: 16px; height: 1.5px; background: var(--black); transition: transform 0.3s, opacity 0.3s; }
 .nav-mobile-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
