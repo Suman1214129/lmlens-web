@@ -668,10 +668,10 @@ export default function Home() {
       <footer style={{ background: "var(--footer-bg)", borderTop: "1px solid var(--footer-divider)", transition: "background 0.35s ease, border-color 0.35s ease" }}>
         <div style={{ margin: "0 auto", maxWidth: "80rem", padding: "0 1.25rem" }}>
           {/* Main row — brand left, columns right */}
-          <div style={{ display: "flex", gap: "4rem", padding: "4rem 0 5rem", flexWrap: "wrap" }} className="footer-main-row">
+          <div className="footer-main-row">
 
             {/* Brand */}
-            <div style={{ flex: "0 0 220px" }}>
+            <div className="footer-brand">
               <span style={{ fontSize: "1.1rem", fontWeight: 500, letterSpacing: "-0.02em", color: "var(--black)" }}>Navchetna Technologies</span>
               <p style={{ marginTop: "1rem", fontSize: "13px", color: "var(--text-muted)", lineHeight: 1.7, maxWidth: "220px" }}>
                 Based in India, For India,<br />By Students of India
@@ -679,7 +679,7 @@ export default function Home() {
             </div>
 
             {/* Columns row */}
-            <div style={{ display: "flex", gap: "4rem", flex: 1, flexWrap: "wrap" }}>
+            <div className="footer-cols-row">
 
               {/* Products */}
               <div style={{ flex: "1 1 130px" }}>
@@ -735,11 +735,11 @@ export default function Home() {
           {/* Bottom bar */}
           <div style={{ borderTop: "1px solid var(--footer-divider)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-between", gap: "1.5rem", padding: "2rem 0", fontSize: "12px", color: "var(--footer-legal)", fontWeight: 500 }} className="footer-bottom-bar">
             <span style={{ alignSelf: "flex-start" }}>© {new Date().getFullYear()} Navchetna Technologies. All rights reserved.</span>
-            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "1.5rem", width: "100%", justifyContent: "space-between" }}>
-              <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "1.5rem" }}>
+            <div className="footer-bottom-inner">
+              <div className="footer-social-links">
                 <a href="https://www.linkedin.com/company/Navchetna-Technology/" target="_blank" rel="noopener noreferrer" style={{ color: "var(--footer-legal)", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">LinkedIn</a>
                 <a href="https://www.instagram.com/navchetna.tech/" target="_blank" rel="noopener noreferrer" style={{ color: "var(--footer-legal)", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Instagram</a>
-                <span style={{ width: "1px", height: "12px", background: "var(--footer-divider)", display: "inline-block" }}></span>
+                <span className="footer-divider-dot" style={{ width: "1px", height: "12px", background: "var(--footer-divider)", display: "inline-block" }}></span>
                 <a href="https://www.navchetna.tech/privacy" style={{ color: "var(--footer-legal)", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Privacy Policy</a>
                 <a href="https://www.navchetna.tech/terms" style={{ color: "var(--footer-legal)", textDecoration: "none", transition: "color 0.2s" }} className="footer-link-hover">Terms of Service</a>
               </div>
