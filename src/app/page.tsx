@@ -62,7 +62,7 @@ export default function Home() {
           <div className={`nav-inner ${isScrolled ? "scrolled" : ""}`} id="navInner">
             <nav className="nav-desktop">
               <a href="#" className="nav-logo">
-                <img src="/lm-lens 1.png" alt="LM Lens" />
+                <img src="/lm-lens 1.png" alt="LM Lens" className="nav-logo-img" />
                 LM <span>LENS</span>
               </a>
               <div className="nav-center">
@@ -117,24 +117,24 @@ export default function Home() {
         <div className="section-container" style={{ position: "relative", zIndex: 1, width: "100%" }}>
           <div className="scroll-fade visible" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
             <div style={{ maxWidth: "54rem" }}>
-              <h1 style={{ fontSize: "clamp(2.5rem, 6vw + 1rem, 60px)", fontWeight: 600, letterSpacing: "-0.03em", lineHeight: 1.08, marginBottom: "1.5rem", color: "#ffffff", fontFamily: "var(--font-body)" }}>
-                The Intelligence Layer for <br/><span className="serif-italic" style={{ fontWeight: 400, letterSpacing: "-0.09em", color: "rgba(255, 255, 255, 0.9)" }}>Unstructured Data.</span>
+              <h1 style={{ fontSize: "clamp(2.5rem, 5vw + 1rem, 60px)", fontWeight: 500, letterSpacing: "-0.03em", lineHeight: 1.08, marginBottom: "1.5rem", color: "#ffffff", fontFamily: "var(--font-body)" }}>
+                The Intelligence Layer for <br/><span className="serif-italic" style={{ fontWeight: 400, letterSpacing: "-0.02em", color: "rgba(255, 255, 255, 0.9)" }}>Unstructured Data.</span>
               </h1>
-              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "clamp(0.95rem, 3vw, 1.1rem)", fontWeight: 300, lineHeight: 1.6, maxWidth: "42rem", margin: "0 auto 2.5rem auto", fontFamily: "var(--font-body)" }}>
+              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "clamp(0.75rem, 2.2vw, 1.05rem)", fontWeight: 400, lineHeight: 1.6, maxWidth: "42rem", margin: "0 auto 2.5rem auto", fontFamily: "var(--font-body)" }}>
                 Files are how the world stores its knowledge. LMLens reads all of it and hands it back in a shape your product can actually use.
               </p>
-              <div className="hero-btns" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "1rem" }}>
+              <div className="hero-btns" style={{ display: "flex", flexWrap: "nowrap", justifyContent: "center", gap: "clamp(0.5rem, 2vw, 1rem)" }}>
                 <a
                   href="#"
-                  style={{ display: "inline-flex", height: "48px", alignItems: "center", gap: "8px", background: "#ffffff", color: "#000000", padding: "0 24px", borderRadius: "999px", fontSize: "13.5px", fontWeight: 600, textDecoration: "none", transition: "opacity 0.2s", fontFamily: "var(--font-body)" }}
+                  style={{ display: "inline-flex", height: "48px", alignItems: "center", gap: "8px", background: "#ffffff", color: "#000000", padding: "0 clamp(16px, 3vw, 24px)", borderRadius: "999px", fontSize: "clamp(12px, 2.5vw, 13.5px)", fontWeight: 600, textDecoration: "none", transition: "opacity 0.2s", fontFamily: "var(--font-body)", whiteSpace: "nowrap" }}
                 >
-                  Get API Acces <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                  Get API Access <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
                 </a>
                 <a
-                  href="#products"
-                  style={{ display: "inline-flex", height: "48px", alignItems: "center", gap: "8px", background: "rgba(255, 255, 255, 0.1)", backdropFilter: "blur(12px)", border: "1px solid rgba(255, 255, 255, 0.2)", color: "#ffffff", padding: "0 24px", borderRadius: "999px", fontSize: "13.5px", fontWeight: 600, textDecoration: "none", transition: "background 0.2s", fontFamily: "var(--font-body)" }}
+                  href="https://www.navchetna.tech/products"
+                  style={{ display: "inline-flex", height: "48px", alignItems: "center", gap: "8px", background: "rgba(255, 255, 255, 0.1)", backdropFilter: "blur(12px)", border: "1px solid rgba(255, 255, 255, 0.2)", color: "#ffffff", padding: "0 clamp(16px, 3vw, 24px)", borderRadius: "999px", fontSize: "clamp(12px, 2.5vw, 13.5px)", fontWeight: 600, textDecoration: "none", transition: "background 0.2s", fontFamily: "var(--font-body)", whiteSpace: "nowrap" }}
                 >
-                  Explore products
+                  Other products
                 </a>
               </div>
             </div>
@@ -192,16 +192,16 @@ export default function Home() {
         <div className="section-container">
           <div className="stats-grid" style={{ display: "grid", gap: "1px", background: "var(--border)" }}>
             <div style={{ background: "var(--bg)", padding: "2rem", textAlign: "center", transition: "background 0.35s ease" }}>
-              <p style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 500, letterSpacing: "-0.03em", color: "var(--black)" }}>&lt; 5ms</p>
-              <p style={{ fontSize: "12px", color: "var(--stat-text-muted)", marginTop: "4px", textTransform: "uppercase", letterSpacing: "0.08em" }}>Token Validation</p>
+              <p style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 500, letterSpacing: "-0.03em", color: "var(--black)" }}>&lt; 3s</p>
+              <p style={{ fontSize: "12px", color: "var(--stat-text-muted)", marginTop: "4px", textTransform: "uppercase", letterSpacing: "0.08em" }}>Document Parsing</p>
             </div>
             <div style={{ background: "var(--bg)", padding: "2rem", textAlign: "center", transition: "background 0.35s ease" }}>
-              <p style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 500, letterSpacing: "-0.03em", color: "var(--black)" }}>Rust</p>
-              <p style={{ fontSize: "12px", color: "var(--stat-text-muted)", marginTop: "4px", textTransform: "uppercase", letterSpacing: "0.08em" }}>Memory Safe Core</p>
+              <p style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 500, letterSpacing: "-0.03em", color: "var(--black)" }}>99.2%</p>
+              <p style={{ fontSize: "12px", color: "var(--stat-text-muted)", marginTop: "4px", textTransform: "uppercase", letterSpacing: "0.08em" }}>OCR Accuracy</p>
             </div>
             <div style={{ background: "var(--bg)", padding: "2rem", textAlign: "center", transition: "background 0.35s ease" }}>
-              <p style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 500, letterSpacing: "-0.03em", color: "var(--black)" }}>Multi-tenant</p>
-              <p style={{ fontSize: "12px", color: "var(--stat-text-muted)", marginTop: "4px", textTransform: "uppercase", letterSpacing: "0.08em" }}>Org &amp; Project Isolation</p>
+              <p style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 500, letterSpacing: "-0.03em", color: "var(--black)" }}>20+</p>
+              <p style={{ fontSize: "12px", color: "var(--stat-text-muted)", marginTop: "4px", textTransform: "uppercase", letterSpacing: "0.08em" }}>Native Languages</p>
             </div>
           </div>
         </div>
@@ -212,9 +212,14 @@ export default function Home() {
         <div className="section-container">
           <div className="scroll-fade visible" style={{ marginBottom: "3rem" }}>
             <p className="section-eyebrow" style={{ marginBottom: "1rem" }}>What we offer</p>
-            <h2 className="section-heading" style={{ maxWidth: "32rem" }}>
+            <h2 className="section-heading" style={{ maxWidth: "36rem", marginBottom: "1rem" }}>
               Universal extraction, <span className="serif-gradient">structured data.</span>
             </h2>
+            <div className="section-divider"></div>
+            <p className="section-body" style={{ maxWidth: "36rem", marginBottom: "1.5rem" }}>
+              Send any file type and automatically receive perfectly structured, clean JSON data. Designed for developers who want to skip the infrastructure and get straight to building.
+            </p>
+            <a className="btn-secondary" href="#intelligence">Explore features</a>
           </div>
           <div className="features-grid" style={{ display: "grid", gap: "12px" }}>
             {[
@@ -272,12 +277,14 @@ export default function Home() {
         <div className="section-container">
           <div className="scroll-fade visible" style={{ marginBottom: "3.5rem" }}>
             <p className="section-eyebrow" style={{ marginBottom: "1rem" }}>How it works</p>
-            <h2 className="section-heading" style={{ maxWidth: "36rem" }}>
+            <h2 className="section-heading" style={{ maxWidth: "36rem", marginBottom: "1rem" }}>
               One API call. <span className="serif-gradient">Any file in.</span>
             </h2>
-            <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", lineHeight: 1.7, maxWidth: "36rem", marginTop: "1rem" }}>
+            <div className="section-divider"></div>
+            <p className="section-body" style={{ maxWidth: "36rem", marginBottom: "1.5rem" }}>
               LMLens handles the entire pipeline — from raw file ingestion to clean structured output — so your team never has to build or maintain extraction infrastructure.
             </p>
+            <a className="btn-secondary" href="#formats">View supported formats</a>
           </div>
 
           {/* Step pipeline */}
@@ -364,9 +371,14 @@ export default function Home() {
         <div className="section-container">
           <div className="scroll-fade visible" style={{ marginBottom: "3rem" }}>
             <p className="section-eyebrow" style={{ marginBottom: "1rem" }}>Supported formats</p>
-            <h2 className="section-heading" style={{ maxWidth: "36rem" }}>
+            <h2 className="section-heading" style={{ maxWidth: "36rem", marginBottom: "1rem" }}>
               Every file type, <span className="serif-gradient">one endpoint.</span>
             </h2>
+            <div className="section-divider"></div>
+            <p className="section-body" style={{ maxWidth: "36rem", marginBottom: "1.5rem" }}>
+              From standard documents to complex handwritten notes and degraded scans, we support all major formats out of the box with zero configuration required.
+            </p>
+            <a className="btn-secondary" href="mailto:contact@lmlens.com">Request a custom format</a>
           </div>
           <div className="formats-grid" style={{ display: "grid", gap: "12px" }}>
 
@@ -529,149 +541,171 @@ export default function Home() {
       <section id="intelligence" style={{ position: "relative", padding: "clamp(4rem, 10vw, 8rem) 0", borderTop: "1px solid var(--border)" }}>
         <div className="section-container">
           
-          <div className="api-section-header scroll-fade visible">
-            <div>
-              <p style={{ fontSize: "12px", fontWeight: 500, color: "var(--text-muted)", marginBottom: "12px" }}>OsmiumAPI</p>
-              <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 400, color: "var(--black)", lineHeight: 1.1, maxWidth: "500px", letterSpacing: "-0.02em" }}>
-                Or build anything with a powerful host of APIs
+          <div className="api-section-header scroll-fade visible" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "flex-end", gap: "1.5rem", paddingBottom: "2rem" }}>
+            <div style={{ flex: "1 1 500px" }}>
+              <p className="section-eyebrow" style={{ marginBottom: "1rem" }}>OsmiumAPI</p>
+              <h2 className="section-heading" style={{ maxWidth: "36rem", marginBottom: "1rem" }}>
+                Build anything with a <span className="serif-gradient">powerful host of APIs.</span>
               </h2>
+              <div className="section-divider"></div>
+              <p className="section-body" style={{ maxWidth: "36rem", marginBottom: "1.5rem" }}>
+                Tap into the same multimodal foundation models that power LMLens. Highly optimized for scale, latency, and structural accuracy.
+              </p>
             </div>
-            <button style={{ padding: "10px 18px", borderRadius: "99px", border: "1px solid var(--border-strong)", fontSize: "13px", fontWeight: 500, background: "transparent", color: "var(--black)", cursor: "pointer", transition: "background 0.2s" }} onMouseOver={e => e.currentTarget.style.background = 'var(--nav-link-hover-bg)'} onMouseOut={e => e.currentTarget.style.background = 'transparent'}>
+            <a className="btn-secondary" href="#" style={{ marginBottom: "1.5rem" }}>
               Explore docs
-            </button>
+            </a>
             <div className="crosshair" style={{ left: 0, bottom: 0 }}></div>
             <div className="crosshair" style={{ right: 0, bottom: 0 }}></div>
           </div>
 
-          {/* Row 1: Extraction API */}
-          <div className="api-row scroll-fade visible">
-            <div className="api-left">
-              <h3 style={{ fontSize: "1.25rem", fontWeight: 500, color: "var(--black)", marginBottom: "1rem" }}>Multimodal Extraction API</h3>
-              <p style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: 1.6, marginBottom: "2rem" }}>
-                Independently rated the leading multimodal extraction model. Choose a model to optimize for consistency, latency, or comprehension. All support 20+ languages natively.
-              </p>
-              
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }}>
-                <div>
-                  <h4 style={{ fontSize: "0.9rem", fontWeight: 500, color: "var(--black)", marginBottom: "4px" }}>Osmium Flash</h4>
-                  <p style={{ fontSize: "0.85rem", color: "var(--text-faint)", lineHeight: 1.5 }}>75ms latency for fast conversational extraction tasks</p>
-                </div>
-                <div>
-                  <h4 style={{ fontSize: "0.9rem", fontWeight: 500, color: "var(--black)", marginBottom: "4px" }}>Osmium Multilingual</h4>
-                  <p style={{ fontSize: "0.85rem", color: "var(--text-faint)", lineHeight: 1.5 }}>Best lifelike consistent multilingual comprehension</p>
-                </div>
-                <div>
-                  <h4 style={{ fontSize: "0.9rem", fontWeight: 500, color: "var(--black)", marginBottom: "4px" }}>Osmium v3</h4>
-                  <p style={{ fontSize: "0.85rem", color: "var(--text-faint)", lineHeight: 1.5 }}>Our most expressive reasoning model yet</p>
-                </div>
-              </div>
-              <div className="crosshair" style={{ right: 0, bottom: 0 }}></div>
-              <div className="crosshair" style={{ right: 0, top: 0 }}></div>
-            </div>
+          {/* Bento Grid for APIs */}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "1.5rem" }}>
             
-            <div className="api-right">
-              <div style={{ background: "var(--bg)", border: "1px solid var(--border-strong)", borderRadius: "16px", padding: "1.5rem", width: "100%", overflowX: "auto", boxShadow: "0 4px 20px rgba(0,0,0,0.02)" }}>
-                 <pre style={{ fontSize: "12px", fontFamily: "monospace", color: "var(--code-text)", background: "transparent", margin: 0, lineHeight: 1.6 }}>
-<span style={{ color: "var(--code-keyword)" }}>import</span> {'{'} LMLensClient {'}'} <span style={{ color: "var(--code-keyword)" }}>from</span> <span style={{ color: "var(--code-string)" }}>"@lmlens/node"</span>;
-
-<span style={{ color: "var(--code-keyword)" }}>const</span> client = <span style={{ color: "var(--code-keyword)" }}>new</span> LMLensClient({'{'} apiKey: <span style={{ color: "var(--code-string)" }}>"YOUR_API_KEY"</span> {'}'});
-
-<span style={{ color: "var(--code-keyword)" }}>await</span> client.extract.<span style={{ color: "var(--code-func)" }}>convert</span>(<span style={{ color: "var(--code-string)" }}>"document_scan.pdf"</span>, {'{'}
-  outputFormat: <span style={{ color: "var(--code-string)" }}>"json"</span>,
-  text: <span style={{ color: "var(--code-string)" }}>"The first move is what sets everything in motion."</span>,
-  modelId: <span style={{ color: "var(--code-string)" }}>"osmium_core_v2"</span>,
-{'}'});
-                 </pre>
-              </div>
-            </div>
-          </div>
-
-          {/* Row 2: Schema API */}
-          <div className="api-row scroll-fade visible">
-            <div className="api-left">
-              <h3 style={{ fontSize: "1.25rem", fontWeight: 500, color: "var(--black)", marginBottom: "1rem" }}>Schema Validation API</h3>
-              <p style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: 1.6, marginBottom: "2rem" }}>
-                The most accurate schema enforcement model. Low cost and supporting automatic type-casting and zero hallucinations built directly into the inference layer.
-              </p>
-              
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }}>
-                <div>
-                  <h4 style={{ fontSize: "0.9rem", fontWeight: 500, color: "var(--black)", marginBottom: "4px" }}>Osmium Strict</h4>
-                  <p style={{ fontSize: "0.85rem", color: "var(--text-faint)", lineHeight: 1.5 }}>98% accuracy</p>
+            {/* Card 1 */}
+            <div className="scroll-fade visible" style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "20px", padding: "2.5rem", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <div>
+                <h3 style={{ fontSize: "1.25rem", fontWeight: 500, color: "var(--black)", marginBottom: "1rem" }}>Multimodal Extraction</h3>
+                <p className="section-body" style={{ marginBottom: "2rem" }}>
+                  Independently rated the leading multimodal extraction model. Optimised for consistency, latency, and comprehension across 20+ languages natively.
+                </p>
+                <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+                  <div style={{ padding: "1rem", background: "var(--bg)", borderRadius: "12px", border: "1px solid var(--border-strong)" }}>
+                    <h4 style={{ fontSize: "0.9rem", fontWeight: 500, color: "var(--black)", marginBottom: "4px" }}>Osmium Flash</h4>
+                    <p style={{ fontSize: "0.85rem", color: "var(--text-faint)" }}>75ms latency for fast conversational extraction</p>
+                  </div>
+                  <div style={{ padding: "1rem", background: "var(--bg)", borderRadius: "12px", border: "1px solid var(--border-strong)" }}>
+                    <h4 style={{ fontSize: "0.9rem", fontWeight: 500, color: "var(--black)", marginBottom: "4px" }}>Osmium v3</h4>
+                    <p style={{ fontSize: "0.85rem", color: "var(--text-faint)" }}>Our most expressive reasoning model yet</p>
+                  </div>
                 </div>
               </div>
-              <div className="crosshair" style={{ right: 0, bottom: 0 }}></div>
-            </div>
-            
-            <div className="api-right" style={{ justifyContent: "center", overflow: "hidden" }}>
-              {/* Graphic mimicking the ElevenScribe diagram */}
-              <div style={{ position: "relative", width: "100%", height: "200px", display: "flex", alignItems: "center", justifyContent: "center", transform: "rotate(-30deg) scale(1.2)", opacity: 0.8 }}>
-                {/* Lines */}
-                <div style={{ position: "absolute", width: "200%", height: "1px", background: "var(--border-strong)", top: "50%" }}></div>
-                <div style={{ position: "absolute", width: "200%", height: "1px", background: "var(--border)", top: "25%" }}></div>
-                <div style={{ position: "absolute", width: "200%", height: "1px", background: "var(--border)", top: "75%" }}></div>
+            </div>            {/* Card 2 */}
+            <div className="scroll-fade visible" style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "20px", padding: "2.5rem", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+              <div>
+                <h3 style={{ fontSize: "1.25rem", fontWeight: 500, color: "var(--black)", marginBottom: "1rem" }}>Schema Validation</h3>
+                <p className="section-body" style={{ marginBottom: "2rem" }}>
+                  The most accurate schema enforcement model. Built-in automatic type-casting and zero hallucinations directly in the inference layer.
+                </p>
                 
-                {/* floating blocks */}
-                <div style={{ background: "var(--bg)", border: "1px solid var(--border-strong)", borderRadius: "8px", padding: "6px 20px", position: "absolute", top: "35%", left: "55%", transform: "translate(-50%, -50%)", boxShadow: "0 10px 30px rgba(0,0,0,0.05)", zIndex: 3 }}>
-                   <span style={{ fontSize: "11px", fontWeight: 600, color: "var(--black)" }}>Osmium Strict</span>
-                </div>
-                <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "8px", padding: "6px 20px", position: "absolute", top: "50%", left: "45%", transform: "translate(-50%, -50%)", zIndex: 2, opacity: 0.7 }}>
-                   <span style={{ fontSize: "11px", fontWeight: 500, color: "var(--text-muted)" }}>JSON Schema Generator</span>
-                </div>
-                <div style={{ background: "var(--surface-2)", border: "1px solid var(--border)", borderRadius: "8px", padding: "6px 20px", position: "absolute", top: "65%", left: "35%", transform: "translate(-50%, -50%)", zIndex: 1, opacity: 0.4 }}>
-                   <span style={{ fontSize: "11px", fontWeight: 500, color: "var(--text-faint)" }}>Type Validator</span>
+                <div style={{ background: "var(--bg)", border: "1px solid var(--border-strong)", borderRadius: "16px", padding: "1.5rem", overflowX: "auto" }}>
+                  <pre style={{ fontSize: "12px", fontFamily: "monospace", color: "var(--code-text)", margin: 0, lineHeight: 1.6 }}>
+<span style={{ color: "var(--code-keyword)" }}>const</span> schema = {'{'}
+  name: <span style={{ color: "var(--code-string)" }}>"string"</span>,
+  age: <span style={{ color: "var(--code-string)" }}>"number"</span>,
+  hasInsurance: <span style={{ color: "var(--code-string)" }}>"boolean"</span>
+{'}'};
+                  </pre>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Row 3: Batch API */}
-          <div className="api-row scroll-fade visible">
-            <div className="api-left" style={{ borderBottom: "none" }}>
-              <h3 style={{ fontSize: "1.25rem", fontWeight: 500, color: "var(--black)", marginBottom: "1rem" }}>Batch Processing API</h3>
-              <p style={{ fontSize: "0.95rem", color: "var(--text-muted)", lineHeight: 1.6, marginBottom: "2rem" }}>
-                Enterprise-grade processing pipelines with natural language prompts in any format, protocol, or structure.
-              </p>
-              
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem" }}>
-                <div>
-                  <h4 style={{ fontSize: "0.9rem", fontWeight: 500, color: "var(--black)", marginBottom: "4px" }}>Batch Pipeline</h4>
-                  <p style={{ fontSize: "0.85rem", color: "var(--text-faint)", lineHeight: 1.5 }}>Trained on licensed data and suitable for commercial use</p>
+            {/* Card 3 */}
+            <div className="scroll-fade visible" style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "20px", padding: "2.5rem", display: "flex", flexDirection: "column", justifyContent: "space-between", gridColumn: "1 / -1" }}>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "2rem", alignItems: "center" }}>
+                <div style={{ flex: "1 1 300px" }}>
+                  <h3 style={{ fontSize: "1.25rem", fontWeight: 500, color: "var(--black)", marginBottom: "1rem" }}>Batch Processing API</h3>
+                  <p className="section-body" style={{ marginBottom: "1.5rem" }}>
+                    Process millions of documents asynchronously. Automatically scales to 50,000 requests per minute with built-in retries and webhook callbacks.
+                  </p>
+                  <a className="btn-secondary" href="#pricing">View batch pricing</a>
                 </div>
-              </div>
-              <div className="crosshair" style={{ right: 0, bottom: 0 }}></div>
-            </div>
-            
-            <div className="api-right" style={{ borderBottom: "none" }}>
-              <div style={{ background: "var(--bg)", border: "1px solid var(--border-strong)", borderRadius: "16px", padding: "1.5rem", width: "100%", overflowX: "auto", boxShadow: "0 4px 20px rgba(0,0,0,0.02)" }}>
-                 <pre style={{ fontSize: "12px", fontFamily: "monospace", color: "var(--code-text)", background: "transparent", margin: 0, lineHeight: 1.6 }}>
-<span style={{ color: "var(--code-keyword)" }}>import</span> {'{'} LMLensClient {'}'} <span style={{ color: "var(--code-keyword)" }}>from</span> <span style={{ color: "var(--code-string)" }}>"@lmlens/node"</span>;
-
-<span style={{ color: "var(--code-keyword)" }}>const</span> {'{'} batch {'}'} = <span style={{ color: "var(--code-keyword)" }}>new</span> LMLensClient();
-
-<span style={{ color: "var(--code-keyword)" }}>const</span> pipeline = <span style={{ color: "var(--code-keyword)" }}>await</span> batch.pipeline.<span style={{ color: "var(--code-func)" }}>create</span>({'{'}
-  prompt: <span style={{ color: "var(--code-string)" }}>"Fast-paced structured data extraction from invoices..."</span>,
-  timeoutMs: <span style={{ color: "var(--code-string)" }}>10000</span>,
+                <div style={{ flex: "1 1 400px", background: "var(--bg)", border: "1px solid var(--border-strong)", borderRadius: "16px", padding: "1.5rem", overflowX: "auto" }}>
+                  <pre style={{ fontSize: "12px", fontFamily: "monospace", color: "var(--code-text)", margin: 0, lineHeight: 1.6 }}>
+<span style={{ color: "var(--code-keyword)" }}>await</span> client.batch.<span style={{ color: "var(--code-func)" }}>create</span>({'{'}
+  files: [<span style={{ color: "var(--code-string)" }}>"s3://bucket/docs/*"</span>],
+  webhookUrl: <span style={{ color: "var(--code-string)" }}>"https://api.yourcorp.com/callback"</span>,
 {'}'});
-                 </pre>
+                  </pre>
+                </div>
               </div>
             </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* PRICING */}
+      <section id="pricing" style={{ padding: "clamp(4rem, 10vw, 8rem) 0", borderTop: "1px solid var(--border)", background: "var(--bg)" }}>
+        <div className="section-container">
+          <div className="scroll-fade visible" style={{ textAlign: "center", marginBottom: "4rem", display: "flex", flexDirection: "column", alignItems: "center" }}>
+            <p className="section-eyebrow" style={{ marginBottom: "1rem" }}>Pricing</p>
+            <h2 className="section-heading" style={{ maxWidth: "36rem", marginBottom: "1rem" }}>
+              Pay only for <span className="serif-gradient">what you extract.</span>
+            </h2>
+            <div className="section-divider" style={{ maxWidth: "12rem", margin: "1.5rem auto" }}></div>
+            <p className="section-body" style={{ maxWidth: "36rem", margin: "0 auto" }}>
+              Transparent pricing based on document complexity and volume. No hidden fees or seat licenses.
+            </p>
           </div>
 
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "1.5rem" }}>
+            
+            {/* Free */}
+            <div className="scroll-fade visible" style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "20px", padding: "2.5rem", display: "flex", flexDirection: "column" }}>
+              <h3 style={{ fontSize: "1.25rem", fontWeight: 600, color: "var(--black)", marginBottom: "0.5rem" }}>Developer</h3>
+              <p className="section-body" style={{ marginBottom: "1.5rem" }}>Perfect for testing and side projects.</p>
+              <div style={{ marginBottom: "2rem", display: "flex", alignItems: "baseline", gap: "4px" }}>
+                <span style={{ fontSize: "2.5rem", fontWeight: 500, color: "var(--black)", letterSpacing: "-0.04em" }}>$0</span>
+                <span style={{ color: "var(--text-faint)", fontSize: "0.9rem" }}>/month</span>
+              </div>
+              <ul style={{ listStyle: "none", padding: 0, margin: "0 0 2rem 0", display: "flex", flexDirection: "column", gap: "12px", flexGrow: 1 }}>
+                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> 1,000 pages per month</li>
+                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> Standard extraction models</li>
+                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> Community support</li>
+              </ul>
+              <a className="btn-secondary" style={{ width: "100%" }} href="#">Start for free</a>
+            </div>
+
+            {/* Pro */}
+            <div className="scroll-fade visible" style={{ background: "var(--black)", border: "1px solid var(--border-strong)", borderRadius: "20px", padding: "2.5rem", display: "flex", flexDirection: "column", position: "relative", overflow: "hidden" }}>
+              <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "4px", background: "linear-gradient(90deg, #10b981, #eab308)" }}></div>
+              <h3 style={{ fontSize: "1.25rem", fontWeight: 600, color: "var(--bg)", marginBottom: "0.5rem" }}>Production</h3>
+              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.88rem", lineHeight: 1.65, marginBottom: "1.5rem" }}>For teams building core workflows.</p>
+              <div style={{ marginBottom: "2rem", display: "flex", alignItems: "baseline", gap: "4px" }}>
+                <span style={{ fontSize: "2.5rem", fontWeight: 500, color: "var(--bg)", letterSpacing: "-0.04em" }}>$49</span>
+                <span style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.9rem" }}>/month</span>
+              </div>
+              <ul style={{ listStyle: "none", padding: 0, margin: "0 0 2rem 0", display: "flex", flexDirection: "column", gap: "12px", flexGrow: 1 }}>
+                <li style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.7)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--bg)" }}>✓</span> 25,000 pages per month</li>
+                <li style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.7)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--bg)" }}>✓</span> Advanced Osmium Flash & v3</li>
+                <li style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.7)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--bg)" }}>✓</span> Batch Processing API</li>
+              </ul>
+              <a href="#" style={{ background: "var(--bg)", color: "var(--black)", padding: "0 18px", height: "36px", borderRadius: "999px", display: "inline-flex", alignItems: "center", justifyContent: "center", fontWeight: 500, fontSize: "13px", textDecoration: "none" }}>Upgrade to Pro</a>
+            </div>
+
+            {/* Enterprise */}
+            <div className="scroll-fade visible" style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "20px", padding: "2.5rem", display: "flex", flexDirection: "column" }}>
+              <h3 style={{ fontSize: "1.25rem", fontWeight: 600, color: "var(--black)", marginBottom: "0.5rem" }}>Enterprise</h3>
+              <p className="section-body" style={{ marginBottom: "1.5rem" }}>Custom limits and deployment.</p>
+              <div style={{ marginBottom: "2rem", display: "flex", alignItems: "baseline", gap: "4px" }}>
+                <span style={{ fontSize: "2.5rem", fontWeight: 500, color: "var(--black)", letterSpacing: "-0.04em" }}>Custom</span>
+              </div>
+              <ul style={{ listStyle: "none", padding: 0, margin: "0 0 2rem 0", display: "flex", flexDirection: "column", gap: "12px", flexGrow: 1 }}>
+                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> Unlimited volume pricing</li>
+                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> Dedicated VPC / On-premise</li>
+                <li style={{ fontSize: "0.95rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "8px" }}><span style={{ color: "var(--black)" }}>✓</span> SLA & 24/7 Support</li>
+              </ul>
+              <a className="btn-secondary" style={{ width: "100%" }} href="mailto:contact@lmlens.com">Contact Sales</a>
+            </div>
+
+          </div>
         </div>
       </section>
 
       {/* SECURITY & TRUST */}
-      <section id="security" style={{ padding: "clamp(4rem, 10vw, 8rem) 0", borderTop: "1px solid var(--border)", background: "var(--surface)" }}>
+      <section id="security" style={{ padding: "clamp(4rem, 10vw, 8rem) 0", borderTop: "1px solid var(--border)", background: "var(--bg)" }}>
         <div className="section-container">
-          <div className="scroll-fade visible" style={{ textAlign: "center", marginBottom: "5rem" }}>
-            <p className="section-eyebrow" style={{ marginBottom: "1rem", display: "inline-block" }}>Security & Trust</p>
-            <h2 className="section-heading" style={{ maxWidth: "48rem", margin: "0 auto 1.25rem" }}>
-              Enterprise-grade security built into the foundation.
+          <div className="scroll-fade visible" style={{ textAlign: "center", marginBottom: "5rem", display: "flex", flexDirection: "column", alignItems: "center" }}>
+            <p className="section-eyebrow" style={{ marginBottom: "1rem" }}>Security & Trust</p>
+            <h2 className="section-heading" style={{ maxWidth: "48rem", marginBottom: "1rem" }}>
+              Enterprise-grade security <span className="serif-gradient">built into the foundation.</span>
             </h2>
-            <p style={{ color: "var(--text-muted)", fontSize: "1.05rem", lineHeight: 1.6, maxWidth: "38rem", margin: "0 auto" }}>
+            <div className="section-divider" style={{ maxWidth: "16rem", margin: "1.5rem auto" }}></div>
+            <p className="section-body" style={{ maxWidth: "38rem", margin: "0 auto 1.5rem" }}>
               We process millions of highly sensitive documents. Your data is isolated, encrypted, and never used to train our foundation models.
             </p>
+            <a className="btn-secondary" href="mailto:contact@lmlens.com">Request security whitepaper</a>
           </div>
           
           <div className="scroll-fade visible security-grid" style={{ display: "grid", gap: "2rem" }}>
@@ -710,6 +744,27 @@ export default function Home() {
                <h4 style={{ fontSize: "1rem", fontWeight: 500, color: "var(--black)", marginBottom: "0.5rem" }}>Isolated Compute</h4>
                <p style={{ fontSize: "0.85rem", color: "var(--text-faint)", lineHeight: 1.5 }}>Enterprise workloads run in dedicated, isolated VPCs with end-to-end encryption.</p>
              </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section style={{ padding: "clamp(4rem, 10vw, 6rem) 0", background: "var(--bg)", borderTop: "1px solid var(--border)" }}>
+        <div className="section-container">
+          <div className="scroll-fade visible" style={{ background: "var(--card-bg)", border: "1px solid var(--border)", borderRadius: "24px", padding: "clamp(3rem, 8vw, 5rem) 2rem", textAlign: "center", maxWidth: "60rem", margin: "0 auto", display: "flex", flexDirection: "column", alignItems: "center", position: "relative", overflow: "hidden", boxShadow: "0 10px 40px rgba(0,0,0,0.02)" }}>
+            {/* Subtle glow */}
+            <div style={{ position: "absolute", top: "-50%", left: "-10%", width: "50%", height: "200%", background: "radial-gradient(ellipse at center, rgba(16, 185, 129, 0.05) 0%, transparent 70%)", pointerEvents: "none" }}></div>
+            <div style={{ position: "absolute", top: "-50%", right: "-10%", width: "50%", height: "200%", background: "radial-gradient(ellipse at center, rgba(139, 92, 246, 0.05) 0%, transparent 70%)", pointerEvents: "none" }}></div>
+
+            <h2 className="section-heading" style={{ marginBottom: "1.5rem", maxWidth: "40rem", position: "relative", zIndex: 1 }}>
+              Ready to automate <span className="serif-gradient">your documents?</span>
+            </h2>
+            <p className="section-body" style={{ maxWidth: "32rem", marginBottom: "2rem", position: "relative", zIndex: 1 }}>
+              Get in touch and see how LMLens can handle document extraction and AI parsing for your organization.
+            </p>
+            <a href="mailto:contact@lmlens.com" style={{ background: "var(--black)", color: "var(--bg)", padding: "0 24px", height: "44px", borderRadius: "999px", display: "inline-flex", alignItems: "center", fontWeight: 500, fontSize: "14px", textDecoration: "none", transition: "opacity 0.2s", position: "relative", zIndex: 1 }} onMouseOver={e => e.currentTarget.style.opacity = '0.8'} onMouseOut={e => e.currentTarget.style.opacity = '1'}>
+              Get API Access
+            </a>
           </div>
         </div>
       </section>
