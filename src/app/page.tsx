@@ -116,22 +116,22 @@ export default function Home() {
         <div className="section-container" style={{ position: "relative", zIndex: 1, width: "100%" }}>
           <div className="scroll-fade visible" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
             <div style={{ maxWidth: "54rem", padding: "0 1rem" }}>
-              <h1 style={{ fontSize: "clamp(2.5rem, 5vw + 1rem, 60px)", fontWeight: 500, letterSpacing: "-0.03em", lineHeight: 1.08, marginBottom: "1.5rem", color: "#ffffff", fontFamily: "var(--font-body)" }}>
+              <h1 style={{ fontSize: "clamp(2.5rem, 5vw + 1rem, 60px)", fontWeight: 500, letterSpacing: "-0.03em", lineHeight: 1.08, marginBottom: "1.5rem", color: "#ffffff", fontFamily: "var(--font-body)", textShadow: "0 2px 10px rgba(0,0,0,0.2)" }}>
                 The Intelligence Layer for <br/><span className="serif-italic" style={{ fontWeight: 400, letterSpacing: "-0.02em", color: "rgba(255, 255, 255, 0.9)" }}>Unstructured Data.</span>
               </h1>
-              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "clamp(0.75rem, 2.2vw, 1.05rem)", fontWeight: 400, lineHeight: 1.6, maxWidth: "42rem", margin: "0 auto 2.5rem auto", fontFamily: "var(--font-body)" }}>
+              <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "clamp(0.75rem, 2.2vw, 1.05rem)", fontWeight: 400, lineHeight: 1.6, maxWidth: "42rem", margin: "0 auto 2.5rem auto", fontFamily: "var(--font-body)", textShadow: "0 2px 8px rgba(0,0,0,0.15)" }}>
                 Files are how the world stores its knowledge. LMLens reads all of it and hands it back in a shape your product can actually use.
               </p>
               <div className="hero-btns" style={{ display: "flex", flexWrap: "nowrap", justifyContent: "center", gap: "clamp(0.5rem, 2vw, 1rem)" }}>
                 <a
                   href="/access"
-                  style={{ display: "inline-flex", height: "48px", alignItems: "center", gap: "8px", background: "#ffffff", color: "#000000", padding: "0 clamp(16px, 3vw, 24px)", borderRadius: "999px", fontSize: "clamp(12px, 2.5vw, 13.5px)", fontWeight: 600, textDecoration: "none", transition: "opacity 0.2s", fontFamily: "var(--font-body)", whiteSpace: "nowrap" }}
+                  style={{ display: "inline-flex", height: "48px", alignItems: "center", gap: "8px", background: "#ffffff", color: "#000000", padding: "0 clamp(16px, 3vw, 24px)", borderRadius: "999px", fontSize: "clamp(12px, 2.5vw, 13.5px)", fontWeight: 600, textDecoration: "none", transition: "opacity 0.2s", fontFamily: "var(--font-body)", whiteSpace: "nowrap", boxShadow: "0 4px 14px rgba(0,0,0,0.1)" }}
                 >
                   Get API Access <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
                 </a>
                 <a
                   href="https://api.navchetna.tech/v1/estimate" target="_blank" rel="noopener noreferrer"
-                  style={{ display: "inline-flex", height: "48px", alignItems: "center", gap: "8px", background: "rgba(255, 255, 255, 0.1)", backdropFilter: "blur(12px)", border: "1px solid rgba(255, 255, 255, 0.2)", color: "#ffffff", padding: "0 clamp(16px, 3vw, 24px)", borderRadius: "999px", fontSize: "clamp(12px, 2.5vw, 13.5px)", fontWeight: 600, textDecoration: "none", transition: "background 0.2s", fontFamily: "var(--font-body)", whiteSpace: "nowrap" }}
+                  style={{ display: "inline-flex", height: "48px", alignItems: "center", gap: "8px", background: "rgba(255, 255, 255, 0.1)", backdropFilter: "blur(12px)", border: "1px solid rgba(255, 255, 255, 0.2)", color: "#ffffff", padding: "0 clamp(16px, 3vw, 24px)", borderRadius: "999px", fontSize: "clamp(12px, 2.5vw, 13.5px)", fontWeight: 600, textDecoration: "none", transition: "background 0.2s", fontFamily: "var(--font-body)", whiteSpace: "nowrap", boxShadow: "0 4px 14px rgba(0,0,0,0.1)" }}
                 >
                   API Pricing
                 </a>
