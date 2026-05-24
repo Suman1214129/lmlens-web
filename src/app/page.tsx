@@ -187,9 +187,8 @@ export default function Home() {
       </section>
 
       {/* STATS */}
-      <section style={{ padding: "clamp(2rem, 5vw, 3rem) 0", borderBottom: "1px solid var(--border)", transition: "borderColor 0.35s ease", position: "relative" }}>
-        <div className="grid-overlay"></div>
-        <div className="section-container" style={{ position: "relative", zIndex: 1 }}>
+      <section style={{ padding: "clamp(2rem, 5vw, 3rem) 0", borderBottom: "1px solid var(--border)", transition: "borderColor 0.35s ease" }}>
+        <div className="section-container">
           <div className="stats-grid" style={{ display: "grid", gap: "1px", background: "var(--border)" }}>
             <div style={{ background: "var(--bg)", padding: "2rem", textAlign: "center", transition: "background 0.35s ease" }}>
               <p style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)", fontWeight: 500, letterSpacing: "-0.03em", color: "var(--black)" }}>&lt; 3s</p>
